@@ -1,0 +1,163 @@
+/* General Layout */
+.bodies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: auto;
+  width: 50%;
+}
+
+.bodies1 {
+  width: 80%;
+  margin: auto;
+}
+
+.bodies1 h1 {
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: rgb(80, 76, 76);
+}
+
+.colum {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.var, .var1, .var2 {
+  width: 45%;
+  padding: 15px;
+}
+
+/* About Me Section */
+.about {
+  width: 100%;
+  background-color: rgb(255, 196, 0);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.life, .tell {
+  width: 80%;
+  margin: auto;
+}
+
+.life h1, .tell h1 {
+  color: rgb(59, 59, 59);
+}
+
+.tellone {
+  width: 60%;
+  margin: auto;
+  background-color: rgb(253, 152, 0);
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.one {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: rgb(95, 0, 0);
+  color: aliceblue;
+  text-align: center;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.name1, .name2, .name3 {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+.name2 .name span {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer1 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .name1, .name2, .name3 {
+      flex: 1 1 100%;
+      text-align: center;
+  }
+
+  .name2 .name {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .name2 .name span {
+      margin: 5px;
+  }
+}
+
+/* Responsive Image Section */
+body {
+  background-color: #d4a017;
+  font-family: Arial, sans-serif;
+}
+
+.text-section {
+  background-color: #d4a017;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.border-warning {
+  border-color: #d4a017 !important;
+  border-width: 3px !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+  .text-section {
+      margin-top: 20px;
+      font-size: 1.4rem;
+      text-align: center;
+  }
+}
